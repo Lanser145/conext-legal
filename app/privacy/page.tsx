@@ -30,52 +30,119 @@ export default function PrivacyPolicy() {
         </h1>
         
         <p className="text-sm text-gray-500 mb-8">
-          Última actualización: 15 octubre 2025
+          Última actualización: 21-11-2025
         </p>
+
+        <div className="text-gray-700 space-y-3 mb-8">
+          <p>
+            Esta Política de Privacidad explica cómo Conext (&quot;la App&quot;, &quot;el Servicio&quot;) trata tus datos personales cuando utilizas nuestras funciones de comunicación, creación de perfil, cuestionarios y herramientas sociales.
+          </p>
+          <p>
+            Al utilizar la App aceptas esta Política de Privacidad. Si no estás de acuerdo, puedes dejar de usar el Servicio o ejercer tus derechos según se indica al final del documento.
+          </p>
+        </div>
 
         {/* Sección 1 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            1. Responsable del tratamiento
+            1. Responsable del Tratamiento
           </h2>
           <div className="text-gray-700 space-y-2">
-            <p><strong>Responsable:</strong> {COMPANY}</p>
-            <p><strong>Contacto privacidad:</strong> {CONTACT}</p>
+            <p>- Responsable: {COMPANY}</p>
+            <p>- Email de contacto: {CONTACT}</p>
+            <p>- Finalidad del contacto: Solicitudes sobre privacidad, ejercicio de derechos y retirada de consentimiento.</p>
           </div>
         </section>
 
         {/* Sección 2 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            2. Qué datos tratamos
+            2. Datos que recopilamos
           </h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>Datos de cuenta: email, alias, foto/avatares y ajustes.</li>
-            <li>Uso del servicio: planes creados/seguidos, asistencia, interacciones básicas.</li>
-            <li>Sociodemográfico (opcional): edad, estudios, ocupación u otros que muestres en el cuestionario.</li>
-            <li>Cuestionario de conexión social (opcional): respuestas y puntuaciones derivadas.</li>
-            <li>Dispositivo/diagnóstico: logs técnicos y métricas necesarias para mantener la app.</li>
-          </ul>
+          <p className="text-gray-700 mb-4">
+            Recopilamos únicamente los datos necesarios para ofrecerte las funcionalidades de la App.
+          </p>
+
+          <div className="ml-4 space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">2.1. Datos de cuenta</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Alias o nombre público</li>
+                <li>- Email</li>
+                <li>- Avatar</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">2.2. Datos de uso y comunicación</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Chats, mensajes o interacciones dentro de la App</li>
+                <li>- Estados y reacciones que publiques</li>
+                <li>- Información sobre conexiones, hora de conexión.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">2.3. Cuestionarios (opcional, basado en consentimiento)</h3>
+              <p className="text-gray-700 mb-2">Solo si tú lo aceptas expresamente:</p>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Cuestionario de conexión social</li>
+                <li>- Cuestionario sociodemográfico</li>
+              </ul>
+              <p className="text-gray-700 mt-2">Puedes retirar este consentimiento en cualquier momento (ver apartado 8).</p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">2.4. Permisos del dispositivo</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Ubicación (opcional)</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* Sección 3 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            3. Finalidades y bases legales
+            3. Finalidades del tratamiento
           </h2>
-          <div className="text-gray-700 space-y-2">
-            <p>
-              <strong>(a)</strong> Prestación del servicio (crear cuenta, organizar y descubrir quedadas): ejecución del contrato.
-            </p>
-            <p>
-              <strong>(b)</strong> Personalización de propuestas y generación de insights: consentimiento (explícito para el cuestionario sociodemográfico y conexión social).
-            </p>
-            <p>
-              <strong>(c)</strong> Seguridad, prevención de abusos y soporte: interés legítimo y cumplimiento legal.
-            </p>
-            <p>
-              No realizamos comunicaciones comerciales ni publicidad de terceros.
-            </p>
+          <p className="text-gray-700 mb-4">Tratamos tus datos para:</p>
+
+          <div className="ml-4 space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">3.1. Proporcionar las funciones básicas de la App</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Mensajería</li>
+                <li>- Conexiones sociales</li>
+                <li>- Creación y edición del perfil</li>
+                <li>- Gestión de la cuenta</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">3.2. Funcionamiento y seguridad</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Prevención de fraude y comportamientos abusivos</li>
+                <li>- Detección y resolución de errores</li>
+                <li>- Seguridad técnica del servicio</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">3.3. Personalización opcional (si lo aceptas)</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Recomendaciones sociales</li>
+                <li>- Ajuste de contenido a tu perfil</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">3.4. Mejora del servicio</h3>
+              <ul className="text-gray-700 space-y-1">
+                <li>- Estadísticas internas</li>
+                <li>- Analítica esencial no publicitaria</li>
+              </ul>
+            </div>
           </div>
         </section>
 
@@ -84,66 +151,82 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
             4. Consentimientos granulares
           </h2>
-          <ul className="list-disc list-inside text-gray-700 space-y-2">
-            <li>
-              <strong>Cuestionario de conexión social:</strong> requiere tu consentimiento explícito antes de responder. Puedes retirarlo solicitándolo a {CONTACT} o eliminando tu cuenta desde Ajustes &gt; Cuenta. La retirada puede desactivar funciones que dependen de dicho consentimiento.
-            </li>
-            <li>
-              <strong>Sociodemográfico:</strong> también es opcional y se basa en tu consentimiento. Puedes retirarlo solicitándolo a {CONTACT} o eliminando tu cuenta.
-            </li>
-          </ul>
+          <p className="text-gray-700 mb-4">Algunas funciones se basan en tu consentimiento explícito:</p>
+
+          <div className="ml-4 space-y-4">
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">4.1. Cuestionario de conexión social</h3>
+              <p className="text-gray-700">
+                Opcional. Puedes retirarlo en cualquier momento enviando un email a: {CONTACT}
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">4.2. Cuestionario sociodemográfico</h3>
+              <p className="text-gray-700">
+                También opcional y revocable en cualquier momento, borrándolo o enviando un correo a {CONTACT}
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* Sección 5 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            5. Plazos de conservación
+            5. Base legal del tratamiento (RGPD)
           </h2>
-          <p className="text-gray-700">
-            Datos de cuenta y respuestas a cuestionarios: mientras mantengas tu cuenta activa y hasta su eliminación, salvo que solicites antes el borrado cuando sea aplicable.
-          </p>
+          <ul className="text-gray-700 space-y-2">
+            <li>- Ejecución del contrato: gestión de la cuenta y funcionalidades básicas.</li>
+            <li>- Consentimiento: cuestionarios, ciertos datos opcionales y funciones sociales avanzadas.</li>
+            <li>- Interés legítimo: seguridad, prevención de fraude, mejora del servicio.</li>
+            <li>- Cumplimiento legal: gestión de solicitudes de usuarios y requerimientos legales.</li>
+          </ul>
         </section>
 
         {/* Sección 6 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            6. Destinatarios y encargados
+            6. Plazos de conservación
           </h2>
-          <div className="text-gray-700 space-y-2">
-            <p>
-              No vendemos tus datos ni los cedemos a terceros con fines publicitarios. Entre usuarios de la app solo se muestran los datos que decides hacer públicos (por ejemplo, alias, avatar, ciudad y la información ligada a tus planes).
-            </p>
-            <p>
-              Utilizamos proveedores que actúan como encargados del tratamiento (p. ej., hosting, base de datos, analítica esencial) bajo contratos con cláusulas de protección de datos y medidas de seguridad adecuadas.
-            </p>
-          </div>
+          <ul className="text-gray-700 space-y-2">
+            <li>- Cuenta y datos asociados: mientras tu cuenta esté activa.</li>
+            <li>- Datos de cuestionarios: hasta que retires tu consentimiento o elimines tu cuenta.</li>
+          </ul>
+          <p className="text-gray-700 mt-4">
+            Al eliminar tu cuenta, se eliminarán tus datos, salvo aquellos que debamos conservar por obligaciones legales.
+          </p>
         </section>
 
         {/* Sección 7 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            7. Tus derechos
+            7. Destinatarios y encargados del tratamiento
           </h2>
-          <div className="text-gray-700 space-y-2">
-            <p>
-              Puedes ejercer acceso, rectificación, supresión, oposición, limitación, portabilidad y retirada del consentimiento.
-            </p>
-            <p>
-              <strong>Cómo:</strong> enviando una solicitud a {CONTACT} o eliminando tu cuenta desde Ajustes &gt; Cuenta. La retirada del consentimiento puede implicar que no puedas seguir utilizando las funcionalidades que dependen de dicho consentimiento.
-            </p>
-            <p>
-              También puedes reclamar ante la AEPD (Agencia Española de Protección de Datos).
-            </p>
-          </div>
+          <p className="text-gray-700 mb-2">
+            No vendemos tus datos ni los cedemos con fines publicitarios.
+          </p>
+          <p className="text-gray-700">
+            Entre usuarios solo se muestran los datos que tú decides hacer públicos como alias o avatar.
+          </p>
         </section>
 
         {/* Sección 8 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            8. Menores de edad
+            8. Tus derechos
           </h2>
+          <p className="text-gray-700 mb-3">Puedes ejercer:</p>
+          <ul className="text-gray-700 space-y-1 mb-4">
+            <li>- Acceso</li>
+            <li>- Rectificación</li>
+            <li>- Supresión</li>
+            <li>- Oposición</li>
+            <li>- Limitación</li>
+            <li>- Portabilidad</li>
+            <li>- Retirada del consentimiento</li>
+          </ul>
           <p className="text-gray-700">
-            La app no está dirigida a menores de 18 años. No permitimos el registro por debajo de esa edad. Si detectamos un caso, eliminaremos la cuenta y los datos.
+            Cómo ejercerlos: Enviando una solicitud a {CONTACT} o eliminando tu cuenta desde Ajustes &gt; Cuenta.
           </p>
         </section>
 
@@ -152,18 +235,31 @@ export default function PrivacyPolicy() {
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
             9. Seguridad
           </h2>
+          <p className="text-gray-700 mb-3">Aplicamos medidas técnicas y organizativas para proteger tus datos:</p>
+          <ul className="text-gray-700 space-y-1">
+            <li>- Cifrado de contraseñas</li>
+            <li>- Monitorización de actividad sospechosa</li>
+            <li>- Servidores seguros con protocolos actualizados</li>
+          </ul>
+        </section>
+
+        {/* Sección 11 */}
+        <section className="mb-8">
+          <h2 className="text-2xl font-semibold text-gray-900 mb-3">
+            11. Cambios en la Política de Privacidad
+          </h2>
           <p className="text-gray-700">
-            Aplicamos medidas técnicas y organizativas para proteger la información (cifrado en tránsito, controles de acceso y registros de actividad).
+            Podremos actualizar esta política por motivos legales, técnicos o funcionales. Cuando ocurra, te lo notificaremos dentro de la App o por email.
           </p>
         </section>
 
-        {/* Sección 10 */}
+        {/* Sección 12 */}
         <section className="mb-8">
           <h2 className="text-2xl font-semibold text-gray-900 mb-3">
-            10. Cambios en esta política
+            12. Contacto
           </h2>
           <p className="text-gray-700">
-            Podremos actualizar esta Política. Te avisaremos en la app. Si continúas usando el servicio tras la actualización, se entenderá que aceptas la nueva versión.
+            Para consultas sobre privacidad: {CONTACT}
           </p>
         </section>
 
